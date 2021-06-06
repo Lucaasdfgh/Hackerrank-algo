@@ -26,3 +26,23 @@ let solution = {
    }
 }
 console.log(solution.hourGlass)
+//higher order functions
+//Functions Assigned to Variables
+let plusFive = (number) => {
+    return number + 5;  
+  };
+  // f is assigned the value of plusFive
+  let f = plusFive;
+   
+  plusFive(3); // 8
+  // Since f has a function value, it can be invoked. 
+  f(9); // 14
+
+  //A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+  const arrayOfNumbers = [1, 2, 3, 4];
+ 
+    const sum = arrayOfNumbers.reduce((accumulator, currentValue) => {  
+     return accumulator + currentValue;
+    });
+ 
+console.log(sum); // 10 
